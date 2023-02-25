@@ -23,3 +23,12 @@ let TODOS = [
 ];
 
 // Your code here
+const port = 3000
+
+app.get('/todos', (req, res) => {
+  res.send(TODOS)
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
