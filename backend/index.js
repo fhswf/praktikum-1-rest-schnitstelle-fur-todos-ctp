@@ -27,6 +27,7 @@ const port = 3000
 
 app.get('/todos', (req, res) => {
   res.send(TODOS)
+  response.status(200).json({ msg: "Todo GET successfully" });
 })
 
 // PUT Anforderung
